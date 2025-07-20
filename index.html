@@ -12,11 +12,11 @@
     <title>Warm Heart</title>
   </head>
   <body>
-    <section class="promo">
+    <section class="header">
       <div class="container">
-        <div class="header">
+        <div class="header__wrapper">
           <div class="burger"><span></span><span></span><span></span></div>
-          <h1 class="header__title">wh</h1>
+          <div class="header__logo"><a href="#">wh</a></div>
           <div class="header__bag">
             <img
               src="/src/img/promo/shopping-bag.svg"
@@ -26,7 +26,48 @@
             <span>(4)</span>
           </div>
         </div>
-        <h2 class="promo__title">Soft plaids for your comfort</h2>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="promo__wrapper-left">
+        <div class="container">
+          <h1 class="promo__title">
+            Soft plaids for<br />
+            your comfort
+          </h1>
+          <p class="promo__text">
+            Throw a blanket over your shoulders or <br />place it on the arm of
+            the sofa, and the <br />atmosphere in the house will be warmer.
+          </p>
+          <button class="promo__btn">Shop now</button>
+        </div>
+      </div>
+      <div class="promo__wrapper-right">
+        <div class="container">
+          <div class="swiper mySwiper promo__swiper">
+            <div class="swiper-wrapper promo__swiper-wrapper">
+              <div class="swiper-slide promo__slide">
+                <img src="/src/img/promo/evali.jpeg" alt="evali" />
+              </div>
+              <div class="swiper-slide promo__slide">
+                <img src="/src/img/promo/ingrun.jpeg" alt="ingrun" />
+              </div>
+              <div class="swiper-slide promo__slide">
+                <img src="/src/img/promo/helgun.jpeg" alt="helgun" />
+              </div>
+              <div class="swiper-slide promo__slide">
+                <img src="/src/img/promo/luddmalla.jpeg" alt="luddmalla" />
+              </div>
+              <div class="swiper-slide promo__slide">
+                <img src="/src/img/promo/mialotta2.jpeg" alt="mialota" />
+              </div>
+              <div class="swiper-slide promo__slide">
+                <img src="/src/img/promo/vivianna.jpeg" alt="vivianna" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </div>
     </section>
     <script type="module" src="/src/js/script.js"></script>
