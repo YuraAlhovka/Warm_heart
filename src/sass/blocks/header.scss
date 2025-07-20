@@ -1,14 +1,17 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
   .burger {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    align-content: space-between;
+    gap: 10px;
     span {
       display: block;
       width: 40px;
@@ -19,23 +22,29 @@
       }
     }
   }
-  &__title {
-    color: $black;
-    font-size: 28px;
+  &__logo {
+    font-size: 30px;
     font-weight: 900;
     text-transform: uppercase;
+    height: 36px;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
   }
   &__bag {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 8px;
     span {
       color: $black;
       font-size: 21px;
       font-weight: 400;
+      height: 28px;
     }
   }
   &__shop {
-    width: 21px;
-    height: 23px;
+    width: 28px;
+    height: 28px;
   }
 }

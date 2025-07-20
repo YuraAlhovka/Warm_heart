@@ -1,0 +1,78 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.promo {
+  position: relative;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__wrapper-left {
+    background-color: $beige;
+    padding: 70px 0 90px 0;
+  }
+  &__wrapper-right {
+    position: relative;
+    padding-bottom: 90px;
+    background-color: $black;
+  }
+  &__title {
+    color: $black;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 130%;
+    text-align: left;
+  }
+  &__text {
+    margin-top: 20px;
+    color: $black;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    min-height: 96px;
+  }
+  &__btn {
+    margin-top: 35px;
+    width: 236px;
+    height: 55px;
+    border-radius: 100px;
+    background: $black;
+    color: $white;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__swiper {
+    position: relative;
+    top: -55px;
+    padding-left: 56px;
+    z-index: 10;
+  }
+  .swiper-pagination {
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    bottom: 0;
+    justify-content: space-around;
+  }
+  &__slide {
+    padding-left: 56px;
+
+    img {
+      width: 180px;
+      height: 174px;
+      transform: rotate(10deg);
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    opacity: 0.3;
+    background-color: $white;
+    -webkit-tap-highlight-color: transparent;
+    &-active {
+      opacity: 1;
+    }
+  }
+}
