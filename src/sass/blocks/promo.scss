@@ -1,7 +1,6 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .promo {
-  position: relative;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -43,22 +42,20 @@
     text-align: center;
   }
   &__swiper {
-    position: relative;
-    top: -55px;
-    padding-left: 56px;
+    position: absolute;
+    top: -40px;
     z-index: 10;
   }
   .swiper-pagination {
-    position: absolute;
+    padding-left: 35px;
     display: flex;
-    z-index: 100;
-    bottom: 0;
-    justify-content: space-around;
+    gap: 22px;
+    margin-top: 57px;
+    position: relative;
   }
   &__slide {
-    padding-left: 56px;
-
     img {
+      margin: 0 auto;
       width: 180px;
       height: 174px;
       transform: rotate(10deg);
