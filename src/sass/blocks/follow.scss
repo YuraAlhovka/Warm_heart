@@ -1,0 +1,35 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.follow {
+  padding: 70px 0 90px 0;
+  &__title {
+    color: $black;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 130%;
+    text-align: left;
+  }
+  img {
+    margin-top: 40px;
+  }
+  &__link {
+    margin-top: 10px;
+
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  &__text {
+    margin-top: 5px;
+    color: $black;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+  }
+}
