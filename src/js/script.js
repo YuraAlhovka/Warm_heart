@@ -16,3 +16,14 @@ try {
     },
   });
 } catch (e) {}
+
+try {
+  const swiper = new Swiper(".popular__swiper", {
+    // configure Swiper to use modules
+    modules: [Pagination],
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+} catch (e) {}

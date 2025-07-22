@@ -1,0 +1,59 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.popular {
+  padding: 70px 0 90px 0;
+  &__title {
+    color: $black;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: left;
+  }
+  &__img-wrapper {
+    padding-top: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 312px;
+    background-color: $beige;
+    border-radius: 25px;
+    img {
+      width: 240px;
+      height: 232px;
+      margin: 0 auto;
+    }
+  }
+  &__swiper {
+    margin-top: 40px;
+  }
+  &__card-name {
+    margin-top: 10px;
+    color: $black;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+  }
+  &__card {
+    margin-top: 1px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: $black;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .swiper-pagination {
+    display: flex;
+    gap: 22px;
+    padding-left: 37px;
+  }
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    opacity: 0.3;
+    background-color: $black;
+    -webkit-tap-highlight-color: transparent;
+    &-active {
+      opacity: 1;
+    }
+  }
+}
